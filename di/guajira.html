@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Guajira - Diana Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e6d6;
+            color: #6d4c41;
+            background-image: url('guajira.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .navbar {
+            background-color: rgba(198, 150, 110, 0.8);
+        }
+        .navbar-brand {
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .guajira-background {
+            background-image: url('https://example.com/guajira-imagen.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+        }
+        .guajira-background h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .guajira-background p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            max-width: 800px;
+            text-align: center;
+        }
+        .letter-text {
+            font-family: 'Georgia', serif;
+            font-size: 1.2em;
+            color: #6d4c41;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .photo-section {
+            margin-top: 40px;
+        }
+        .photo-section h2 {
+            color: #a0522d;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #a0522d;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .photo-section .row > div {
+            margin-bottom: 20px;
+        }
+        .photo-section img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .photo-section img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: rgba(121, 85, 72, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #d7ccc8;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="destination-page guajira-page">
+    <header class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Diana Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vuelos.html"><i class="fas fa-plane"></i> Vuelos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rentar_carros.html"><i class="fas fa-car"></i> Rentar carros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="guajira-background">
+        <h1>Bienvenido a La Guajira</h1>
+        <p>Disfruta de tus vacaciones en el deslumbrante desierto de La Guajira.</p>
+    </div>
+
+    <main class="main-content">
+        <div class="letter-text">
+            <p>Querido viajero,</p> ¿cómo estás? este fue nuestro segundo viaje grande, por así decirlo. fue una cosa de locos, la aventura contigo fue espectacular, ver esa sonrisa todos los días me hacía sentir la persona más afortunada del mundo, gracias por estar en mi vida. como en esta aventura vendrán mil más y ahora la pista,  En medio del vasto desierto, donde la arena se extiende hasta donde alcanza la vista, hay algo que siempre está presente, aunque parezca estar en silencio. Bajo el resplandor del sol abrasador del mediodía, ¿qué se convierte en un oasis de frescura y vida, invitándote a descubrir sus secretos más profundos?
+        </div>
+
+        <div class="photo-section">
+            <h2>Galería de Fotos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="guajira1.jpg" class="img-fluid" alt="La Guajira">
+                </div>
+                <div class="col-md-6">
+                    <img src="guajira2.jpg" class="img-fluid" alt="La Guajira">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="guajira3.jpg" class="img-fluid" alt="La Guajira">
+                </div>
+                <div class="col-md-6">
+                    <img src="guajira4.jpg" class="img-fluid" alt="La Guajira">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Diana Booking. Todos los derechos reservados.</p>
+        <ul class="list-unstyled">
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentar Carros - Diana Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e8f5e9;
+            color: #0058a3;
+            background-image: url('carretera.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 88, 163, 0.8); /* Color azul oscuro similar al de Booking con transparencia */
+            padding: 15px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em; /* Tamaño de fuente más pequeño */
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-size: 0.9em; /* Tamaño de fuente más pequeño */
+            font-weight: normal; /* Cambia de bold a normal */
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .rentar-carros-section {
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .rentar-carros-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #0058a3; /* Color azul oscuro similar al de Booking */
+        }
+
+        .vehicle-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .vehicle-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .vehicle-card img {
+            width: 100%;
+            height: 200px; /* Define un alto fijo */
+            object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin distorsión */
+            border-radius: 5px;
+        }
+
+        .vehicle-card h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .vehicle-card p {
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: rgba(0, 88, 163, 0.8); /* Color azul oscuro similar al de Booking con transparencia */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Diana Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vuelos.html"><i class="fas fa-plane"></i> Vuelos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="rentar_carros.html"><i class="fas fa-car"></i> Rentar carros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container my-5 rentar-carros-section" id="rentar-carros">
+            <h2 class="section-title">Renta tu proximo carruaje</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="vehicle-card" onclick="showMessage('moto')">
+                        <img src="moto.jpg" alt="Honda XR 190" class="img-fluid">
+                        <h3>Honda XR 190</h3>
+                        <p>Desde $30/día</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="vehicle-card" onclick="showMessage('carro')">
+                        <img src="carro.jpg" alt="Chevrolet Sail" class="img-fluid">
+                        <h3>Chevrolet Sail</h3>
+                        <p>Desde $40/día</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Diana Booking. Todos los derechos reservados.</p>
+            <ul class="list-unstyled">
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function showMessage(vehicle) {
+            if (vehicle === 'moto') {
+                alert('Amorcito, nos vamos en tu moto 😍😍😍😍😍😍😍🛵🛵');
+            } else if (vehicle === 'carro') {
+                alert('Amorcito, nos vamos en tu carrito 😍😍😍😍😍😍😍🚘🚘');
+            }
+        }
+    </script>
+</body>
+
+</html>

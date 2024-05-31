@@ -1,0 +1,131 @@
+/* Estilo para el encabezado */
+.navbar {
+    background-color: #003580; /* Azul de Booking */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+/* Estilo más visible para páginas de destino */
+.navbar.navbar-visible {
+    background-color: rgba(0, 53, 128, 0.9); /* Fondo más opaco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para más visibilidad */
+}
+
+.navbar.navbar-visible .nav-link,
+.navbar.navbar-visible .navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: white;
+    color: black;
+}
+
+footer a {
+    color: #003580; /* Azul de Booking */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para la sección principal */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background: url('imagen1.jpg') center center/cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 53, 128, 0.5); /* Azul de Booking con transparencia reducida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-text h1,
+.hero-text p {
+    color: white;
+}
+
+.container {
+    background-color: white;
+}
+
+/* Formulario de búsqueda */
+#search-form .form-control {
+    margin-bottom: 0;
+}
+
+#search-form .input-group-text {
+    background-color: #003580;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+#search-form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+#search-form .btn-primary {
+    background-color: #003580;
+    border: none;
+    height: 38px; /* Altura igual a la de los campos de entrada */
+}
+
+#search-form .btn-primary:hover {
+    background-color: #002060;
+}
+
+/* Otros estilos */
+.destination-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destination-card {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+blockquote {
+    border-left: 5px solid #003580;
+    padding-left: 10px;
+    margin: 20px 0;
+}
+
+/* Estilo de los testimonios */
+.testimonials blockquote {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials blockquote p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.testimonials blockquote footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: right;
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Estilo para el cuerpo */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: #003580;
+            padding: 15px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: normal;
+            font-size: 1em;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #d9d9d9;
+        }
+
+        /* Estilo para las secciones */
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .destination-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .destination-card h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .destination-card p {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+
+        .testimonials blockquote {
+            border-left: 5px solid #003580;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .testimonials blockquote p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .testimonials blockquote footer {
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Nuevo estilo para la sección de preguntas frecuentes */
+        .faq-section {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #003580;
+        }
+
+        .faq-section .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+
+        .faq-section .faq p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .faq-section .faq + .faq {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        /* Nuevo estilo para la sección de noticias y ofertas */
+        .news-offers-section {
+            margin-top: 30px;
+        }
+
+        .news-offers-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .news-offers-section .news-offer {
+            margin-bottom: 20px;
+        }
+
+        .news-offers-section .news-offer h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .news-offers-section .news-offer p {
+            margin: 0;
+        }
+
+        /* Nuevo estilo para la sección de contacto */
+        .contact-info-section {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .contact-info-section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-section p {
+            margin: 0;
+        }
+
+        .hero-section {
+            background-image: url('imagen1.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 53, 128, 0.5);
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Diana Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vuelos.html"><i class="fas fa-plane"></i> Vuelos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="rentar_carros.html"><i class="fas fa-car"></i> Rentar carros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h1>Explora el mundo con nosotros</h1>
+                <p>Encuentra las mejores ofertas en vuelos, hoteles y alquiler de coches.</p>
+                <form id="search-form" class="form-inline justify-content-center">
+                    <div class="form-group mx-sm-2 mb-2">
+                        <label for="destination" class="sr-only">Destino</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control" id="destination" name="destination"
+                                placeholder="Destino" required autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group mx-sm-2 mb-2">
+                        <label for="checkin-date" class="sr-only">Check-in Date</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                            </div>
+                            <input type="date" class="form-control" id="checkin-date" name="checkin-date" required>
+                        </div>
+                    </div>
+                    <div class="form-group mx-sm-2 mb-2">
+                        <label for="checkout-date" class="sr-only">Check-out Date</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                            </div>
+                            <input type="date" class="form-control" id="checkout-date" name="checkout-date" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 align-self-end">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h2 class="section-title">Nuestros próximos viajes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="destination1.jpg" alt="Destination 1" class="img-fluid">
+                        <h3>Can Cun</h3>
+                        <p>Desde $299</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="destination2.jpg" alt="Destination 2" class="img-fluid">
+                        <h3>Desierto de la tatacoa</h3>
+                        <p>Desde $399</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="destination3.jpg" alt="Destination 3" class="img-fluid">
+                        <h3>Cartagena</h3>
+                        <p>Desde $499</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials container my-5">
+            <h2 class="section-title">Reseñas de nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Excelente novia, la mujer mas perfecta que puede existir, la mejor compañera de vida ."</p>
+                        <footer class="blockquote-footer">Juan Pérez</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Aunque sea muy brava es la mejor experiencia que he y que tendre en mi vida."
+                        </p>
+                        <footer class="blockquote-footer">María Gómez</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"La mejor compañia para mis travesias, esos ojos que parecen dos lunas ."</p>
+                        <footer class="blockquote-footer">Carlos López</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes -->
+        <section class="faq-section container my-5">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq">
+                <h4>¿En nuestro próximo viaje puedo pelear?</h4>
+                <p>No, nuestra recomendación es que evites de todas las formas pelear.</p>
+            </div>
+            <div class="faq">
+                <h4>¿Qué métodos de pago aceptan?</h4>
+                <p>Aceptamos los besitos de la novia.</p>
+            </div>
+            <div class="faq">
+                <h4>¿Puedes seguir siendo brava para que me ames?</h4>
+                <p>Sí, aunque me duele, puedes seguir siendo brava y enojona.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Noticias y Ofertas -->
+        <section class="news-offers-section container my-5">
+            <h2 class="section-title">Noticias y Ofertas</h2>
+            <div class="news-offer">
+                <h4>Nueva ruta a cartagena</h4>
+                <p>Estamos emocionados de anunciar nuestro super viaje a cartagena, va a ser un viaje excelente y mas que estoy tan emocionado por concer cosas contigo .</p>
+            </div>
+            <div class="news-offer">
+                <h4>Descuento especial</h4>
+                <p>Si ves esto tienes un bono especial para un dia para pintar cosas juntos en la casa o en un cafecito.</p>
+            </div>
+            <div class="news-offer">
+                <h4>Alquiler de coches con descuento</h4>
+                <p>Si alquilas la moto o el carro tendras la posibilidad de tener una ayuda del 30% de gasolina, no desaproveches esta oportunidad .</p>
+            </div>
+        </section>
+
+        <!-- Sección de Información de Contacto -->
+        <section class="contact-info-section container my-5">
+            <h2 class="section-title">Información de Contacto</h2>
+            <p>Teléfono: +321-599-7149</p>
+            <p>Email: contacto@dianabooking.com</p>
+            <p>Dirección: Conjunto super mansion, Diana, </p>
+        </section>
+    </main>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Diana Booking. Todos los derechos reservados.</p>
+        <ul class="list-unstyled">
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
